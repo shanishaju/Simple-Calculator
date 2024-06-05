@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calc-body">
+          <div class="calc-screen">
+            <input id="result" class="input-box" style="text-align: right;" placeholder="0" readonly>
+          </div>
+          <div class="calc-button-row">
+            <div class="button c" onclick="clearAll()">AC</div>
+            <div class="button l" onclick="back()"><i class="fa-solid fa-delete-left"></i>               
+            </div>
+            <div class="button l" onclick="display('%')">%</div>
+            <div class="button l " onclick="display('/')">/</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="display('7')">7</div>
+            <div class="button" onclick="display('8')">8</div>
+            <div class="button" onclick="display('9')">9</div>
+            <div class="button l" onclick="display('*')">*</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="display('4')">4</div>
+            <div class="button" onclick="display('5')">5</div>
+            <div class="button" onclick="display('6')">6</div>
+            <div class="button l" onclick="display('-')">−</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="display('1')">1</div>
+            <div class="button" onclick="display('2')">2</div>
+            <div class="button" onclick="display('3')">3</div>
+            <div class="button l" onclick="display('+')">+</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="display('.')">.</div>
+            <div class="button" onclick="display('0')">0</div>
+                <div class="button l" onclick="equal()">=</div>
+            </div>
+          </div>
+        </div>
+</body>
+<script src="./logic.js"></script>
+</html>
